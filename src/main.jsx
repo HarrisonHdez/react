@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Reloj } from './useEffect/Reloj'
+import { Temporizador } from './useEffect/Temporizador'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Reloj />
+    <Temporizador />
   </React.StrictMode>,
 )

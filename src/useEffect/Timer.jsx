@@ -13,10 +13,13 @@ export const Timer = () => {
 
   return (
     <>
-      <h1>{count}</h1>
+      <h1>{ count }</h1>
     </>
   );
 };
+
+
+
 
 //* Crea un componente Timer que muestre un contador en la pantalla y se actualice cada segundo. Utiliza useEffect para actualizar el estado del contador cada vez que cambie el tiempo.
 

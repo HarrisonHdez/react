@@ -20,6 +20,9 @@ export const Reloj = () => {
 }
 
 
+
+
+
 //* Crea un componente llamado Reloj que renderice un reloj digital que muestre la hora actual. Este componente deberá tener un useEffect que se active cada segundo y actualice la hora mostrada en el reloj.
 
 //* Este componente deberá tener un useEffect que se active cada segundo y actualice la hora mostrada en el reloj.
