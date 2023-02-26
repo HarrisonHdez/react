@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { RandomQuote } from './useEffect/RandomQuote'
+import UserList from './useEffect/UserList'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RandomQuote />
+    <UserList />
   </React.StrictMode>,
 )
