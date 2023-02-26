@@ -14,6 +14,7 @@ export const Temporizador = () => {
   return (
     <>
       <h1>{ temporizador }</h1> 
+      
     </>
   )
 }

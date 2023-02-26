@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Temporizador } from './useEffect/Temporizador'
+import { RandomQuote } from './useEffect/RandomQuote'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Temporizador />
+    <RandomQuote />
   </React.StrictMode>,
 )
