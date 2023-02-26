@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Contador } from './useState/Contador'
+import { Counter } from './useEffect/Counter'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Contador value={ 10 } />
+    <Counter />
   </React.StrictMode>,
 )
