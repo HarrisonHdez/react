@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import UserList from './useEffect/UserList'
+import { Contador } from './useEffect/Contador'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <UserList />
+    <Contador />
   </React.StrictMode>,
 )
