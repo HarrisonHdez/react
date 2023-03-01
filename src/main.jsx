@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Counter } from './useEffect/Counter'
-
+import { Counter2 } from './useEffect/Counter2'
+import './App.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Counter  />
+    <Counter2 />
   </React.StrictMode>,
 )
