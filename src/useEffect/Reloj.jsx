@@ -17,7 +17,7 @@ export const Reloj = () => {
       <h1>{rejoj.toLocaleTimeString()}</h1>
     </>
   )
-}
+}    
 
 // import React, { useEffect, useState } from 'react'
 
