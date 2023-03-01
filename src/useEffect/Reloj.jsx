@@ -1,23 +1,44 @@
 import React, { useEffect, useState } from 'react'
 
 export const Reloj = () => {
-    const [time, setTime] = useState( new Date() );
+  const [rejoj, setRejoj] = useState( new Date() );
 
-    useEffect(() => {
-      const interval = setInterval(() => setTime( new Date() ),  1000);
-    
-      return () => clearInterval( interval )
-        
-    }, [time])
-    
+  useEffect(() => {
+    const interval = setInterval( () => setRejoj( new Date() ), 1000)
+  
+    return () => {
+      clearInterval( interval )
+    }
+  }, [rejoj])
+  
+
   return (
     <>
-    
-        <h1>{time.toLocaleTimeString()}</h1>
-    
+      <h1>{rejoj.toLocaleTimeString()}</h1>
     </>
   )
 }
+
+// import React, { useEffect, useState } from 'react'
+
+// export const Reloj = () => {
+//     const [time, setTime] = useState( new Date() );
+
+//     useEffect(() => {
+//       const interval = setInterval(() => setTime( new Date() ),  1000);
+    
+//       return () => clearInterval( interval )
+        
+//     }, [time])
+    
+//   return (
+//     <>
+    
+//         <h1>{time.toLocaleTimeString()}</h1>
+    
+//     </>
+//   )
+// }
 
 
 

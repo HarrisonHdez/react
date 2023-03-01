@@ -1,9 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Counter2 } from './useEffect/Counter2'
+
+
 import './App.css';
+import { Reloj } from './useEffect/Reloj';
+
+
+
+
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Counter2 />
+    <Reloj />
   </React.StrictMode>,
 )

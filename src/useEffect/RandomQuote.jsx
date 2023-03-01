@@ -1,36 +1,30 @@
+
 import React, { useEffect, useState } from 'react'
 
 export const RandomQuote = () => {
     const [quote, setQuote] = useState('');
 
+
     const getQuote = async () => {
         const resp = await fetch('https://api.quotable.io/random');
         const data = await resp.json();
-        setQuote(`${data.content} ${ data.author }`);
+        setQuote( `${data.author} ${data.content}` )
     }
 
     useEffect(() => {
+    
         getQuote()
-      
     }, [])
     
-    return (
-        <>
-            <h1>{ quote }</h1>
-            <button onClick={ getQuote }>Cambiar Cita</button>  
-        </>
-    )
+
+
+  return (
+    <>
+        <h1>{ quote }</h1>
+        <button onClick={ getQuote }>Cambiar</button>    
+    </>
+  )
 }
-
-
-
-
-
-
-
-
-
-
 
 //? https://api.quotable.io/random
 //* Crea un nuevo componente llamado RandomQuote que muestre una cita aleatoria cada vez que se carga la página.
@@ -44,6 +38,54 @@ export const RandomQuote = () => {
 //* Cada vez que se carga la página, muestra una cita aleatoria de la lista.
 
 //* Añade un botón debajo de la cita actual que permita al usuario cargar una nueva cita aleatoria.
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useEffect, useState } from 'react'
+
+// export const RandomQuote = () => {
+//     const [quote, setQuote] = useState('');
+
+//     const getQuote = async () => {
+//         const resp = await fetch('https://api.quotable.io/random');
+//         const data = await resp.json();
+//         setQuote(`${data.content} ${ data.author }`);
+//     }
+
+//     useEffect(() => {
+//         getQuote()
+      
+//     }, [])
+    
+//     return (
+//         <>
+//             <h1>{ quote }</h1>
+//             <button onClick={ getQuote }>Cambiar Cita</button>  
+//         </>
+//     )
+// }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
