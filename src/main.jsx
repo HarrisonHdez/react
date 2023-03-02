@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 
 
 import './App.css';
-import { Toggle } from './useEffect/Toggle';
+import { UserList } from './useEffect/UserList';
 
 
 
@@ -11,6 +11,6 @@ import { Toggle } from './useEffect/Toggle';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Toggle />
+    <UserList />
   </React.StrictMode>,
 )

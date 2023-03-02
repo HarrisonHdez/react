@@ -1,37 +1,40 @@
 import { useState, useEffect } from 'react';
 
-function UserList() {
-  const [users, setUsers] = useState([]);
+export const UserList = () => {
+  const [users, setUsers] = useState ([]);
   const [isLoading, setIsLoading] = useState(true);
 
   const getUsers = async () => {
-    const response = await fetch(`https://jsonplaceholder.typicode.com/users`)
-    const data = await response.json();
-    setUsers(data);
-    setIsLoading(false);
-  };
+    const resp = await fetch('https://jsonplaceholder.typicode.com/users');
+    const data = await resp.json();
+    setUsers(data)
+    console.log(data);
+    setIsLoading(false)
+  }
+
   useEffect(() => {
     getUsers();
-  }, []);
+  }, [])
+  
 
   return (
-    <div>
+    <>
       {isLoading && <p>Cargando...</p>}
       {!isLoading && (
-        <ul>
-          {users.map((user) => (
-            <li key={user.id}>
-              <h2>{user.name}</h2>
-              <p>{user.address.city}, {user.address.street}, {user.address.suite}</p>
-            </li>
-          ))}
-        </ul>
+        users.map(user => (
+          <li key={user.id}>
+            <h2>{user.name}</h2>
+            <p>{user.address.city}, {user.address.street}, {user.address.suite}</p>
+
+
+          </li>
+        ))
       )}
-    </div>
-  );
+    </>
+  )
 }
 
-export default UserList;
+
 
 //* En este ejercicio, vamos a construir una aplicación sencilla que muestre una lista de usuarios obtenida desde una API. La aplicación mostrará el nombre y la dirección de cada usuario en la lista.
 
@@ -48,3 +51,40 @@ export default UserList;
 //* Utiliza un método de renderizado condicional para mostrar un mensaje de "Cargando" mientras se espera la respuesta de la API, y luego muestra la lista de usuarios una vez que la respuesta ha sido recibida.
 
 //* En el método de renderizado, mapea el arreglo de usuarios recibido como prop y muestra el nombre y la dirección de cada usuario en la lista.
+
+
+
+// import { useState, useEffect } from 'react';
+
+// function UserList() {
+//   const [users, setUsers] = useState([]);
+//   const [isLoading, setIsLoading] = useState(true);
+
+//   const getUsers = async () => {
+//     const response = await fetch(`https://jsonplaceholder.typicode.com/users`)
+//     const data = await response.json();
+//     setUsers(data);
+//     setIsLoading(false);
+//   };
+//   useEffect(() => {
+//     getUsers();
+//   }, []);
+
+//   return (
+//     <div>
+//       {isLoading && <p>Cargando...</p>}
+//       {!isLoading && (
+//         <ul>
+//           {users.map((user) => (
+//             <li key={user.id}>
+//               <h2>{user.name}</h2>
+//               <p>{user.address.city}, {user.address.street}, {user.address.suite}</p>
+//             </li>
+//           ))}
+//         </ul>
+//       )}
+//     </div>
+//   );
+// }
+
+// export default UserList;
