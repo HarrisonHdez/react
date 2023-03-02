@@ -17,15 +17,14 @@ export const FormularioHijo = ({ enviarFormulario }) => {
   
   return (
     <form onSubmit={ onSubmit }>
-      <input 
-        type="text"
-        placeholder='hola'
-        value={ formState }
-        onChange={ enviarTexto }
-        required
-      />
+        <input 
+          type="text"
+          placeholder='hola'
+          value={ formState }
+          onChange={ enviarTexto }
+          required 
+        />
       <button>ENVIAR</button>
     </form>
   );
 }
-
