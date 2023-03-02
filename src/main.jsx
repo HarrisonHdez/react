@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 
 
 import './App.css';
-import { UserList } from './useEffect/UserList';
+import { Formulario } from './useState/Formulario';
 
 
 
@@ -11,6 +11,6 @@ import { UserList } from './useEffect/UserList';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <UserList />
+    <Formulario />
   </React.StrictMode>,
 )
