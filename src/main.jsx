@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 
 
 import './App.css';
-import { Reloj } from './useEffect/Reloj';
+import { Toggle } from './useEffect/Toggle';
 
 
 
@@ -11,6 +11,6 @@ import { Reloj } from './useEffect/Reloj';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Reloj />
+    <Toggle />
   </React.StrictMode>,
 )
