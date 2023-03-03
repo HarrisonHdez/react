@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 
 
 import './App.css';
-import FormularioPadre from './useState/FormularioPadre';
+import { Toggle2 } from './useState/Toggle2';
 
 
 
@@ -11,6 +11,6 @@ import FormularioPadre from './useState/FormularioPadre';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <FormularioPadre />
+    <Toggle2 />
   </React.StrictMode>,
 )
