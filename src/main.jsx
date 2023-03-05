@@ -3,14 +3,13 @@ import ReactDOM from 'react-dom/client'
 
 
 import './App.css';
-import { Toggle } from './useState/Toggle';
-
+import { Lista } from './useState/Lista';
 
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Toggle/>
+    <Lista />
   </React.StrictMode>,
 )
