@@ -1,7 +1,7 @@
 import React from 'react'
 import { elementos } from './datosLista'
 import { Lista2 } from './Lista2'
-
+     
 export const Lista = () => {
 
 
