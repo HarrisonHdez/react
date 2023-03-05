@@ -4,7 +4,7 @@ import { Lista2 } from './Lista2'
      
 export const Lista = () => {
 
-
+     
   return (
     <>
 
