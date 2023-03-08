@@ -21,12 +21,12 @@ export const FormularioHijo = ({ enviarFormulario }) => {
         type="text"
         placeholder='hola'
         value={ formState }
-        onChange={ enviarTexto }
-        required
-      />
-      <button>ENVIAR</button>
-    </form>
-  );
-}   
+        onChange={ enviarTexto } 
+        required  
+      /> 
+      <button>ENVIAR</button> 
+    </form> 
+  ); 
+}    
 
     
