@@ -6,7 +6,7 @@ export const FormularioHijo = ({ enviarFormulario }) => {
   const enviarTexto = (event) => {
     setFormState(event.target.value);
   }
-
+      
   const onSubmit = (event) => {
     event.preventDefault();
     if (formState.length >= 4) {
