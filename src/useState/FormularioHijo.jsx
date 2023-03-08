@@ -14,10 +14,10 @@ export const FormularioHijo = ({ enviarFormulario }) => {
       setFormState('');
     }
   }
-        
+             
   return (
     <form onSubmit={ onSubmit }>
-      <input 
+      <input    
         type="text"
         placeholder='hola'
         value={ formState }
