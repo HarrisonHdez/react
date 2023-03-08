@@ -14,7 +14,7 @@ export const FormularioHijo = ({ enviarFormulario }) => {
       setFormState('');
     }
   }
-  
+        
   return (
     <form onSubmit={ onSubmit }>
       <input 
@@ -27,5 +27,6 @@ export const FormularioHijo = ({ enviarFormulario }) => {
       <button>ENVIAR</button>
     </form>
   );
-}
+}   
 
+    
