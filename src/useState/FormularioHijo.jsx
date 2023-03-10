@@ -23,7 +23,7 @@ export const FormularioHijo = ({ enviarFormulario }) => {
         value={ formState }
         onChange={ enviarTexto } 
         required  
-      /> 
+      />      
       <button>ENVIAR</button> 
     </form> 
   ); 
