@@ -1,36 +1,28 @@
 import React, { useEffect, useState } from 'react'
 
 export const Counter2 = () => {
-  const [count, setCount] = useState(0);
-
-  const incrementCounter = () => {
-    setCount( count + 5 );
-  }
+  const [counter, setCounter] = useState(0);
 
   useEffect(() => {
-    if( !count % 10 === 0 && count % 10 === 0 ) {
-      console.log(`FELICITACIONES LLEGASTE A ${ count }`);
-    }
+    if ( counter !== 0 && counter % 10 === 0 ) {
+      console.log(`Felicidades a ${counter} puntos`);
+    } 
   
-    // return () => {
-    //   second
-    // }
-  }, [count])
+    
+  }, [counter]);
+
+  const increment = () => {
+    setCounter( counter + 1)
+  }
   
 
   return (
     <>
-        <h1>{ count }</h1>
-        <button onClick={ incrementCounter }>+5</button>
+      <h1>{ counter }</h1>
+      <button onClick={ increment }>+1</button>
     </>
   )
 }
-
-
-
-
-
-
 
 
 
