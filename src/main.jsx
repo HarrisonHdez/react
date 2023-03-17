@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client'
 
 
 import './App.css';
-import { Lista } from './useState/Lista';
+import { Contador } from './useEffect/Contador';
 
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Lista />
+    <Contador />
   </React.StrictMode>,
 )

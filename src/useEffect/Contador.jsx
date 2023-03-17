@@ -1,44 +1,24 @@
 import React, { useEffect, useState } from 'react'
 
 export const Contador = () => {
+    const [count, setCount] = useState(0);
 
-    const [count, setCount] = useState(0)
-
-    const incrementCount = () => {
-        setCount( count + 1 )
+    const IncrementCount = () => {
+        setCount( count + 1 );
     }
-
     useEffect(() => {
-      document.title = `Contador: ${ count }` 
+      document.title = `Contador: ${count}`;
     
       
     }, [count])
     
-
   return (
     <>
-       <h1>{ count }</h1>
-       <button onClick={ incrementCount }>+1</button>
+        <h1>{count}</h1>
+        <button onClick={ IncrementCount }>+1</button>
     </>
   )
 }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
