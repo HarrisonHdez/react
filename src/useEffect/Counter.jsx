@@ -1,44 +1,37 @@
 import React, { useEffect, useState } from 'react'
 
 export const Counter = () => {
-  const [counter, setCounter] = useState(10);
+  const [counter, setCounter] = useState(0);
 
-    const incrementCounter = () => {
-      setCounter( counter + 1  );
+  const incrementarCounter = () => {
+    if( counter >= 10 ) return
+    setCounter( counter + 1 );
+  }
+  const decrementarCounter = () => {
+    if( counter <= 0 ) return;
+    setCounter( counter - 1 );
+  }
+
+  useEffect(() => {
+    if( counter === 10) {
+      console.log('Valor Maximo');
     }
-    const decrementCounter = () => {
-      setCounter( counter - 1 );
+    console.log(`EL valor actual es ${ counter }`);
+  
+    return () => {
+      console.log(`El valor desmonto`);
     }
-
-    useEffect(() => {
-      console.log(`EL NUEVO VALOR es ${ counter }`);
-    
-      return () => {
-        console.log(`El valor se desmonto`);
-      }
-    }, [counter])
-    
-
-    return (
-      <>
-        <h1>{ counter }</h1>
-        <button onClick={ incrementCounter }>+1</button>
-        <button onClick={ decrementCounter }>-1</button>
-      </>
-    )
+  }, [counter])
+  
+  
+  return (
+    <>
+      <h1>{counter}</h1>
+      <button onClick={ incrementarCounter }>+1</button>
+      <button onClick={ decrementarCounter }>-1</button>
+    </>
+  )
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
